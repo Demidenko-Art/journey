@@ -1,0 +1,1067 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.left{
+    width: 15%;
+    background: rgb(255, 255, 255);
+    height: 1285px;
+display: flex;
+flex-wrap: wrap;
+padding-left: 2%;
+padding-right: 2%;
+padding-top: 2%;
+padding-bottom: 0.5%;
+font-family: "Nunito", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+
+}
+
+.left_img{
+    width: 100%;
+    height: 100px;
+ 
+}
+.left_img img{
+    width: 75%;
+    height: 70px;
+    margin-left: 4%;
+}
+.line{
+    width: 100%;
+    height: 1px;
+     background:gray ;
+}
+.iconk{
+    width: 100%;
+    height: 770px;
+}
+.last_left{
+    width: 100%;
+    height: 208px;
+}
+.imgicons{
+width: 100%;
+height: 72px;
+margin-top: 7%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.dom_icon{
+    width: 57px;
+    height: 54px;
+    margin-left: 4%;  
+    background: url(../img/dom.png); 
+    background-size: 100% 100%;
+}
+.book{
+    width: 57px;
+    height: 54px;
+    margin-left: 4%;  
+    background: url(../img/koshel.png); 
+    background-size: 100% 100%;
+}
+.explo{
+    width: 57px;
+    height: 54px;
+    margin-left: 4%;  
+    background: url(../img/zeml.png); 
+    background-size: 100% 100%;
+}
+.mass{
+    width: 57px;
+    height: 54px;
+    margin-left: 4%;  
+    background: url(../img/sms.png); 
+    background-size: 100% 100%;
+}
+.sup{
+    width: 57px;
+    height: 54px;
+    margin-left: 4%;  
+    background: url(../img/pod.png); 
+    background-size: 100% 100%;
+}
+.set{
+    width: 57px;
+    height: 54px;
+    margin-left: 4%;  
+    background: url(../img/nast.png); 
+    background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.iconk div h2{
+ height: 70px;
+ line-height: 40px;
+ text-align: left;
+ margin-right: 32%;
+}
+.h2_span{
+    height: 70px;
+    line-height:72px ;
+    text-align: left;
+    margin-right: 39%;
+    color: rgb(0, 247, 255);
+}
+.last_perek{
+    width: 100%;
+    height: 70px;
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.last_perek h2{
+    line-height: 54px;
+    margin-right: 15%;
+}
+.logout{
+    width: 100%;
+    height: 50px;
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 5%;
+display: none;
+}
+.logout h2{
+    line-height: 50px;
+    margin-right: 32%;
+}
+
+.log_ou{
+    width: 17%;
+    height: 50px;
+    margin-left: 4%;
+background: url(../img/icons8-выход-100.png);
+background-size: 100% 100%;
+}
+.perekl{
+    width: 32%;
+    height: 50px;
+    background: rgb(0, 225, 255);
+   
+}
+.right{
+    width: 85%;
+    background: rgb(240, 240, 240);
+    display: flex;
+flex-wrap: wrap;
+font-family: "Nunito", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+
+}
+.verh_right{
+    width: 100%;
+    height: 315px;
+    padding: 1%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+
+.verh_1{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+.verh_2{
+    width: 100%;
+    height: 60px;
+    margin-top: 0.5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.verh_3{
+    width: 100%;
+    height: 70px;
+    margin-top: 0.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.verh_text1{
+    width: 30%;
+    height: 110px;
+    margin-top: 0.5%;
+
+}
+.verh_text1 h1{
+    text-align: left;
+    margin-left: 4%;
+    font-size: 44px;
+}
+.verh_text1 p{
+    text-align: left;
+    margin-left: 4%;
+    font-size: 20px;
+}
+.poisk{
+    width: 45%;
+    height: 73px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 0.9%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.POIS_IM{
+    width: 42px;
+    height: 43px;
+    margin-top: 1%;
+    margin-left: 3%;
+   background: url(../img/751463.png);
+   background-size: 100% 100%;
+}
+
+.zatek{
+width: 100%;
+height: 1284px;
+background: #07070780;
+position: fixed;
+display: none;
+}
+.poisk input {
+    width: 80%;
+    height: 57px;
+    background: white;
+    border: none;
+    text-align: left;
+    line-height: 57px;
+    padding-left: 3%;
+    font-size: 20px;
+    border: none;
+    }
+.avatar{
+    width: 10%;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.avaa {
+    width: 96%;
+    height: 70px;
+    background: #01dbdb;
+    border: none;
+    color: white;
+    border-radius: 11px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 26px;
+
+}
+.verh_2 input{
+    width: 8%;
+    height: 56px;
+background: #01dbdb;
+text-align: center;
+line-height: 50px;
+margin-left: 2%;
+border-radius: 16px;
+font-size: 20px;
+border: none;
+
+}
+.dvon{
+    width: 43%;
+    height: 87px;
+    border-radius: 100%;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    display: none;
+}
+.dvon img{
+    width: 48px;
+    margin-left: 22%;
+}
+.ava{
+    width: 43%;
+    height: 87px;
+    border-radius: 100%;
+    background: white;
+background: url(../img/masculine-avatar-on-circle_icon-icons.webp);
+background-size: 100% 100%;
+display: none;
+}
+.verh_3_hs{
+    width: 35%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 23px;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 2%;
+}
+.verh_sartirovka{
+    width: 20%;
+    height: 70px;
+    margin-right: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.peres{
+    width: 23%;
+    background: url(../img/goul.png);
+    height: 56px;
+    background-size: 100% 100%;
+    border: none;
+}
+.peres1{
+    width: 23%;
+    background: url(../img/gri.png);
+    height: 56px;
+    background-size: 100% 100%;
+    border: none;
+}
+.peres2{
+    width: 23%;
+    background: url(../img/gos.png);
+    height: 56px;
+    background-size: 100% 100%;
+    border: none;
+}
+
+.niz_right{
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+.Vietnam{
+    width: 17%;
+    height: 424px;
+    border-radius: 10px;
+    background: white;
+    padding: 0.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.soder_text{
+    width: 100%;
+    height: 225px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cras_kart{
+width: 100%;
+height: 194px;
+border-radius: 10px;
+}
+.Vietnam h3{
+    width: 100%;
+    font-size: 21px;
+}
+.Vietnam h2{
+    width: 100%;
+}
+.Vietnam p{
+    width: 100%;
+    font-size: 18px;
+}
+.span_fin{
+    text-decoration: line-through;
+}
+.zvezda{
+    width: 16%;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.zvezda img{
+    width: 22px;
+    height: 22px;
+}
+.chelovek{
+    width: 38%;
+    height: 34px;
+}
+.zvezda h3{
+    width: 50%;
+}
+.chelovek_ot {
+    width: 29%;
+    height: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.chelovek_ot h3{
+    width: 59%;
+    line-height: 34px;
+    margin-left: 3%;
+
+}
+
+  body.dark-mode {
+    background: #1e1e1e;
+    color: #e0e0e0;
+  }
+  body.dark-mode .box{
+    background: #000000;
+  }
+  body.dark-mode .left {
+    background: #000000;
+  }
+
+  body.dark-mode h1,
+  body.dark-mode h2,
+  body.dark-mode h3,
+  body.dark-mode p {
+    color: #e0e0e0;
+  }
+
+  
+  body.dark-mode .verh_2 input {
+    background: #03ffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #555;
+  }
+  body.dark-mode input[type="text"]{
+    background: white;
+  }
+
+
+  body.dark-mode .line {
+    background: #444;
+  }
+  body.dark-mode .right{
+background: rgb(20, 20, 20);
+  }
+
+  body.dark-mode .Vietnam {
+    background: #2c2c2c;
+    border: 1px solid #444;
+  }
+
+  body.dark-mode .Vietnam p {
+    color: #ccc;
+  
+  }
+
+  body.dark-mode img {
+    filter: brightness(0.9);
+  }
+
+
+  body.dark-mode .book{
+background: url(../img/wallet-with-card-sticking-out.png);
+background-size: 100% 100%;
+justify-content: space-between;
+  }
+
+
+  body.dark-mode .explo{
+    background: url(../img/planet-earth.png);
+    background-size: 100% 100%;
+}
+
+body.dark-mode .mass{
+    background: url(../img/icons8-chat-bubble-100.png);
+    background-size: 100% 100%;
+}
+body.dark-mode .sup{
+    background: url(../img/assistant.png);
+    background-size: 100% 100%;
+}
+body.dark-mode .set{
+    background: url(../img/settings.png);
+    background-size: 100% 100%;
+}
+body.dark-mode .log_ou{
+    background: url(../img/exsidee.png);
+    background-size: 100% 100%;
+}
+body.dark-mode .poisk{
+    background: black;
+}body.dark-mode .poisk input{
+    background: black;
+}
+
+body.dark-mode .peres{
+
+    background: url(../img/goul2.png);
+    background-size: 100% 100%;
+}
+body.dark-mode .peres1{
+
+    background: url(../img/gri1.png);
+    background-size: 100% 100%;
+}
+body.dark-mode .peres2{
+
+    background: url(../img/gos1.png);
+    background-size: 100% 100%;
+}
+
+body.dark-mode .POIS_IM{
+    background: url(../img/icons8-поиск-100.png);
+    background-size: 100% 100%;
+
+}
+
+
+input[type="checkbox"] {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+
+  }
+  
+  label::after {
+    content: "";
+    width: 21px;
+    height: 21px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+  }
+  
+  input[type="checkbox"]:checked + label {
+    background: #2196F3;
+  }
+  
+  input[type="checkbox"]:checked + label::after {
+    left: 27px;
+  }
+
+  .login_box {
+    width: 320px;
+    top: 41%;
+    left: 45%;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    position: absolute;
+    background: white;
+    display: none;
+}
+
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .header h2 {
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .name-tag {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    background: #ff00c8;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transform: rotate(-10deg);
+    font-weight: bold;
+  }
+  
+  .close{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .input_box {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .input_box input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border-radius: 25px;
+    border: none;
+    background: #eee;
+    font-size: 14px;
+  }
+  
+
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .options label {
+    font-size: 14px;
+  }
+  
+
+  
+  .login-button {
+    background: #00aef3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+  }
+  .zapomnil{
+width: 45%;
+  }
+  
+  @media screen and (min-width: 1025px) and (max-width: 1920px) {
+    .left {
+        width: 15%;
+    }
+
+    .right {
+        width: 85%;
+    }
+
+    .iconk div h2 {
+        margin-right: initial;
+    }
+
+    .h2_span {
+        margin-right: initial;
+    }
+
+    .Vietnam {
+        width: calc(25% - 20px); 
+        min-width: 200px;
+    }
+
+   
+    @media screen and (max-width: 1920px) and (min-width: 1441px) {
+        .iconk div h2 {
+            margin-right: 11%; 
+        }
+        .h2_span {
+            margin-right: 20%; 
+        }
+        .Vietnam {
+            width: calc(20% - 20px); 
+        }
+        .chelovek_ot {
+            width: 35%;
+            margin-right: 3%;
+        }
+        .zvezda {
+            width: 19%;
+        }
+    }
+    @media screen and (max-width: 1440px) {
+        .iconk div h2 {
+            margin-right: -8%;
+        }
+    }
+}
+.burger-menu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: #01dbdb;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001; 
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.burger-menu span {
+    display: block;
+    width: 70%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.burger-menu.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .left {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100vh; 
+        z-index: 1000;
+        transition: left 0.3s ease;
+        padding-top: 80px; 
+        box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+        overflow-y: auto; 
+    }
+
+    .left.active {
+        left: 0; 
+    }
+
+    .burger-menu {
+        display: flex; 
+    }
+
+    .right {
+        width: 100%;
+        padding-top: 70px; 
+    }
+
+    .left_img {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .left_img img {
+        width: 64%;
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .iconk {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .imgicons {
+        justify-content: flex-start;
+        gap: 15px;
+        margin-top: 15px;
+        height: auto;
+        margin-left: 6%;
+    }
+    .imgicons h2, .h2_span {
+        line-height: normal;
+        margin-right: 0;
+        font-size: 18px;
+    }
+    .dom_icon, .book, .explo, .mass, .sup, .set, .log_ou {
+        width: 35px;
+        height: 35px;
+        margin-left: 0;
+    }
+
+    .last_left {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .last_perek {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .last_perek label {
+        margin-top: 10px;
+    }
+    .logout {
+        justify-content: flex-start;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .logout h2 {
+        line-height: normal;
+        margin-right: 0;
+        font-size: 18px;
+    }
+
+    .verh_right {
+        height: auto;
+        padding: 2%;
+    }
+
+    .verh_1 {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .verh_text1 {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+    .verh_text1 h1 {
+        font-size: 30px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .verh_text1 p {
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .poisk {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }
+    .poisk input {
+        height: 40px;
+        font-size: 16px;
+    }
+    .POIS_IM {
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    .avatar {
+        width: 100%;
+        height: auto;
+        flex-direction: row-reverse; 
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .avaa {
+        width: auto;
+        min-width: 80px;
+        height: 40px;
+        font-size: 18px;
+        padding: 0 15px;
+        line-height: 43px;
+    }
+    .dvon, .ava {
+        width: 45px;
+        height: 45px;
+        margin: 0;
+    }
+    .dvon img {
+        width: 30px;
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .verh_2 {
+        height: auto;
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        overflow-x: auto; 
+        white-space: nowrap; 
+        padding-bottom: 10px; 
+    }
+    .verh_2 input {
+        width: auto;
+        min-width: 80px;
+        height: 40px;
+        font-size: 16px;
+        margin-left: 0;
+        padding: 0 15px;
+        display: inline-block; 
+    }
+
+    .verh_3 {
+        flex-direction: column;
+        height: auto;
+        margin-top: 15px;
+        gap: 15px;
+    }
+    .verh_3_hs {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        font-size: 18px;
+        gap: 10px;
+    }
+    .verh_sartirovka {
+display: none;
+    }
+    .peres, .peres1, .peres2 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .niz_right {
+        padding: 2%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .Vietnam {
+        width: 95%;
+        height: auto;
+        min-height: 250px; 
+        flex-direction: column;
+        padding: 10px;
+        margin-left: 0;
+        margin-top: 0;
+        justify-content: center;
+    }
+    .cras_kart {
+        width: 100%;
+        height: 200px; 
+        object-fit: cover; 
+        margin-bottom: 10px;
+    }
+    .soder_text {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+    .Vietnam h2 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .Vietnam h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .Vietnam p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .zvezda, .chelovek_ot {
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+    .zvezda img, .chelovek {
+        width: 20px;
+        height: 20px;
+    }
+    .chelovek_ot h3 {
+        line-height: normal;
+        margin-left: 0;
+    }
+
+ 
+    .login_box {
+        width: 90%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        padding: 20px;
+        max-width: 350px; 
+    }
+    .input_box input {
+        padding: 10px 15px;
+    }
+    .options {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .login-button {
+        width: 100%;
+        padding: 12px 0;
+    }
+    .zapomnil {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 428px) {
+    .left {
+        width: 80%;
+    }
+    .verh_text1 h1 {
+        font-size: 26px;
+    }
+    .verh_text1 p {
+        font-size: 14px;
+    }
+    .verh_2 input {
+        font-size: 14px;
+        min-width: 70px;
+        line-height: 42px;
+    }
+    .Vietnam {
+        width: 98%; 
+    }
+    .login_box {
+        width: 95%;
+        padding: 15px;
+    }
+}
+

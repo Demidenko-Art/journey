@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="burger-menu" id="burgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="box">
+        <div class="zatek"></div>
+
+        <div class="login_box">
+            <div class="header">
+                <h2>АВТОРИЗАЦИЯ</h2>
+                <span onclick="close1()" class="close">×</span>
+            </div>
+            
+            <div class="input_box">
+                <input id="em" type="email" placeholder="E-mail" />
+            </div>
+            <div class="input_box">
+                <input id="pas" type="password" placeholder="Password" />
+            </div>
+        
+            <div class="options">
+                <div class="zapomnil"><input type="checkbox"> Запомнить</div>
+                <input type="button" onclick="vhod()" class="login-button" value="ВХОД">
+            </div>
+        </div>
+
+        <div id="lestt" class="left">
+            <div class="left_img">
+                <img src="img/Group 1.png" alt="">
+            </div>
+            <div class="line"></div>
+            <div class="iconk">
+                <div class="imgicons"> <div class="dom_icon"></div> <span class="h2_span"><h2>Home</h2></span></div>
+                <div class="imgicons"> <div class="book"></div><h2>Booking</h2></div>
+                <div class="imgicons"> <div class="explo"></div><h2>Explore</h2></div>
+                <div class="imgicons"> <div class="mass"></div><h2>Message</h2></div>
+                <div class="imgicons"> <div class="sup"></div><h2>Support</h2></div>
+                <div class="imgicons"> <div class="set"></div><h2>Setting</h2></div>
+            </div>
+            <div class="last_left">
+                <div class="last_perek">
+                    <input type="checkbox" id="toggle" onclick="dark_tema()">
+                    <label style="text-align: center; padding-top:10%; " for="toggle">tema</label>
+                </div>
+                <div onclick="koneck()" class="logout">
+                    <div class="log_ou"></div> <h2>Logout</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="right" id="rightt">
+            <div class="verh_right">
+                <div class="verh_1">
+                    <div class="verh_text1">
+                        <h1>Hello Serh!</h1>
+                        <p>Welcome back and explore new trips</p>
+                    </div>
+                    <div class="poisk">
+                        <div class="POIS_IM"></div>
+                        <input type="text" placeholder="Festival Yuki Matsuri is coming" oninput="search()" id="search" >
+                    </div>
+                    <div class="avatar">
+                        <button onclick="login()" class="avaa">login</button>
+                        <div class="dvon"> <img src="img/8888.png" alt=""></div>
+                        <div class="ava"></div>
+                    </div>
+                </div>
+
+                <div class="verh_2">
+                    <input type="button" onclick="fun1(event)" value="France">
+                    <input type="button" onclick="fun1(event)" value="Vietnam">
+                    <input type="button" onclick="fun1(event)" value="Ukraine">
+                    <input type="button" onclick="fun1(event)" value="Switzerland">
+                    <input type="button" onclick="fun1(event)" value="Poland">
+                    <input type="button" onclick="fun1(event)" value="Croatia">
+                    <input type="button" onclick="fun1(event)" value="Thailand">
+                    <input type="button" onclick="fun1(event)" value="Bulgaria">
+                    <input type="button" onclick="fun1(event)" value="ALL">
+                </div>
+
+                <div class="verh_3">
+                    <div class="verh_3_hs">
+                        <p>Sort by:</p>
+                        <p onclick="popularity()">popularity</p>
+                        <p onclick="rating()">rating</p>
+                        <p onclick="price1()">price ↑</p>
+                        <p onclick="price2()">price ↓</p>
+                    </div>
+                    <div class="verh_sartirovka">
+                        <input class="peres1" onclick="perestroy1()" type="button" >
+                        <input class="peres" onclick="perestroy()" type="button">
+                        <input class="peres2"onclick="perestroy2()" type="button">
+                    </div>
+                </div>
+            </div>
+
+            <div class="niz_right">
+                <div id="Vietna" class="Vietnam" data-name="Vietnam" data-title="Nha Trang (Vietnam)" data-price="900" data-reyting="4.5" data-popular="320">
+                    <img class="cras_kart" src="img/ea8be2c64405a175b5f5d5e010e11191b2168d28.png" alt="">
+                    <div class="soder_text">
+                        <h2>Nha Trang (Vietnam)</h2>
+                        <h3>$ 900 <span class="span_fin">(1050)</span></h3>
+                        <p>Nha Trang has many famous tourist attractions and is a big tourist center of the country...</p>
+                        <div class="zvezda"> <img src="img/1828884.png" alt=""> <h3>4.5</h3></div> 
+                        <div class="chelovek_ot">
+                            <img class="chelovek" src="img/2815428.png" alt="">
+                            <h3>(320)</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="Vietna" class="Vietnam"  data-name="France" data-title="Paris (France)" data-price = "1200" data-reyting="4.2"  data-popular="325">
+                    <img class="cras_kart" src="img/078fc0d58ccb558a18288656555f74eb6d5c2525 (1).png" alt="">
+                    <div class="soder_text">
+                    <h2>Paris (France)</h2>
+                    <h3 >$ 1200</h3>
+                    <p>Nha Trang has many famous tourist attractions and is a big tourist center of the country...</p>
+                     <div class="zvezda"> <img src="img/1828884.png" alt=""> <h3>4.2</h3></div> 
+                      <div class="chelovek_ot">
+                        <img class="chelovek" src="img/2815428.png" alt="">
+                        <h3>(325)</h3>
+                    </div>
+                </div>
+                </div>
+                <div id="Vietna" class="Vietnam" data-name="Ukraine" data-title="Lviv (Ukraine)" data-price = "600" data-reyting="4.9"  data-popular="822">
+                    <img class="cras_kart" src="img/dc9cad31359ab63f65fd043f21e27f74a054c533.jpg" alt="">
+                    <div class="soder_text">
+                    <h2>Lviv (Ukraine)</h2>
+                    <h3 >$ 600 <span class="span_fin">(1200)</span></h3>
+                    <p>Nha Trang has many famous tourist attractions and is a big tourist center of the country...</p>
+                     <div class="zvezda"> <img src="img/1828884.png" alt=""> <h3>4.9</h3></div> 
+                      <div class="chelovek_ot">
+                        <img class="chelovek" src="img/2815428.png" alt="">
+                        <h3>(822)</h3>
+                    </div>
+                </div>
+                </div>
+                <div id="Vietna" class="Vietnam" data-name="Thailand" data-title="Bangkok (Thailand)" data-price = "1500" data-reyting="4.4" data-popular="1,022" >
+                    <img class="cras_kart" src="img/36bf7c6c1fe217f9581b53b1a4b037554cd89f48.png" alt="">
+                    <div class="soder_text">
+                    <h2>Bangkok (Thailand)</h2>
+                    <h3 >$ 1500 </h3>
+                    <p>Nha Trang has many famous tourist attractions and is a big tourist center of the country...</p>
+                     <div class="zvezda"> <img src="img/1828884.png" alt=""> <h3>4.4</h3></div> 
+                      <div class="chelovek_ot">
+                        <img class="chelovek" src="img/2815428.png" alt="">
+                        <h3>(999)</h3>
+                    </div>
+                </div>
+                </div>
+                <div  id="Vietna" class="Vietnam" data-name="Switzerland" data-title="Zurich (Switzerland)" data-price = "1800" data-reyting="3.9" data-popular="503" >
+                    <img class="cras_kart" src="img/994f084d8c28e2d8255a1537c12fb4fb1378e943.jpg" alt="">
+                    <div class="soder_text">
+                    <h2>Zurich (Switzerland)</h2>
+                    <h3 >$ 1800 </h3>
+                    <p>Nha Trang has many famous tourist attractions and is a big tourist center of the country...</p>
+                     <div class="zvezda"> <img src="img/1828884.png" alt=""> <h3>3.9</h3></div> 
+                      <div class="chelovek_ot">
+                        <img class="chelovek" src="img/2815428.png" alt="">
+                        <h3>(503)</h3>
+                    </div>
+                </div>    
+                </div>
+                <div id="Vietna" class="Vietnam" data-name="France" data-title="Marseille (France)" data-price = "1000" data-reyting="4.0" data-popular="722">
+                    <img class="cras_kart" src="img/7723d758f98a63913e48461c0130b5c6235ae931.jpg" alt="">
+                    <div class="soder_text">
+                    <h2>Marseille (France)</h2>
+                    <h3 >$ 1000</h3>
+                    <p>Nha Trang has many famous tourist attractions and is a big tourist center of the country...</p>
+                     <div class="zvezda"> <img src="img/1828884.png" alt=""> <h3>4.0</h3></div> 
+                      <div class="chelovek_ot">
+                        <img class="chelovek" src="img/2815428.png" alt="">
+                        <h3>(722)</h3>
+                    </div>
+                </div>
+                </div>
+                <div id="Vietna" class="Vietnam" data-name="Ukraine" data-title="Kyiv (Ukraine)" data-price = "850" data-reyting="4.2" data-popular="120" >
+                    <img class="cras_kart" src="img/bdd4288eefb154c61c2195b93bd81c00b018325a.png" alt="">
+                    <div class="soder_text">
+                    <h2>Kyiv (Ukraine)</h2>
+                    <h3 >$ 850 <span class="span_fin">(880)</span></h3>
+                    <p>Nha Trang has many famous tourist attractions and is a big tourist center of the country...</p>
+                     <div class="zvezda"> <img src="img/1828884.png" alt=""> <h3>4.2</h3></div> 
+                      <div class="chelovek_ot">
+                        <img class="chelovek" src="img/2815428.png" alt="">
+                        <h3>(120)</h3>
+                    </div>
+                </div>
+                </div>
+                <div id="Vietna" class="Vietnam" data-name="Bulgaria" data-title="Bulgaria" data-price = "650" data-reyting="4.7" data-popular="889" >
+                    <img class="cras_kart" src="img/bolgar.jpg" alt="">
+                    <div class="soder_text">
+                    <h2>Bulgaria</h2>
+                    <h3 >$ 650 <span class="span_fin">(1300)</span></h3>
+                    <p>Nha Trang has many famous tourist attractions and is a big tourist center of the country...</p>
+                     <div class="zvezda"> <img src="img/1828884.png" alt=""> <h3>4.7</h3></div> 
+                      <div class="chelovek_ot">
+                        <img class="chelovek" src="img/2815428.png" alt="">
+                        <h3>(889)</h3>
+                    </div>
+                </div>
+                </div>
+                <div id="Vietna" class="Vietnam" data-name="Croatia" data-title="Croatia" data-price = "1200" data-reyting="3.8"  data-popular="386">
+                    <img class="cras_kart" src="img/xvar.jpg" alt="">
+                    <div class="soder_text">
+                    <h2>Croatia</h2>
+                    <h3 >$ 1200 <span class="span_fin">(1700)</span></h3>
+                    <p>Nha Trang has many famous tourist attractions and is a big tourist center of the country...</p>
+                     <div class="zvezda"> <img src="img/1828884.png" alt=""> <h3>3.8</h3></div> 
+                      <div class="chelovek_ot">
+                        <img class="chelovek" src="img/2815428.png" alt="">
+                        <h3>(386)</h3>
+                    </div>
+                </div>
+                </div>
+                <div id="Vietna" class="Vietnam" data-name="Poland" data-title="Poland" data-price = "700" data-reyting="4.1" data-popular="1987">
+                    <img class="cras_kart" src="img/poland.jpg" alt="">
+                    <div class="soder_text">
+                    <h2>Poland</h2>
+                    <h3 >$ 700 <span class="span_fin"></span></h3>
+                    <p>Nha Trang has many famous tourist attractions and is a big tourist center of the country...</p>
+                     <div class="zvezda"> <img src="img/1828884.png" alt=""> <h3>4.1</h3></div> 
+                      <div class="chelovek_ot">
+                        <img class="chelovek" src="img/2815428.png" alt="">
+                        <h3>(876)</h3>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        let cards = document.querySelectorAll(".Vietnam");
+        const leftSidebar = document.getElementById("lestt");
+        const burgerMenu = document.getElementById("burgerMenu");
+        const zatekOverlay = document.querySelector(".zatek"); 
+
+        burgerMenu.addEventListener("click", () => {
+            leftSidebar.classList.toggle("active");
+            burgerMenu.classList.toggle("active");
+            zatekOverlay.style.display = leftSidebar.classList.contains("active") ? "block" : "none";
+        });
+
+        zatekOverlay.addEventListener("click", () => {
+            if (leftSidebar.classList.contains("active")) {
+                leftSidebar.classList.remove("active");
+                burgerMenu.classList.remove("active");
+                zatekOverlay.style.display = "none";
+            }
+        });
+
+        function fun1(){
+            let clicked = event.target;
+            let value1 =clicked.value;
+            for(let i = 0;i<cards.length;i++){
+                let a = cards[i].dataset.name;
+                if(a==[value1]){
+                    cards[i].style.display = "flex"; 
+                }
+                else if (value1 == 'ALL') {
+                    cards[i].style.display = "flex"; 
+                }
+                else{
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    
+        function search(){
+            let searchInput = document.getElementById("search").value.trim().toLowerCase();
+            for( let i = 0; i<cards.length;i++){
+                let ab= cards[i].dataset.title.trim().toLowerCase();
+                if(ab.includes(searchInput)){
+                    cards[i].style.display = "flex";
+                }
+                else{
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    
+        function price2(){
+            let masprice = [];
+            for (let i=0; i<cards.length;i++){
+                masprice.push(cards[i]);
+            }
+            masprice.sort(function(a,b){
+                return a.dataset.price - b.dataset.price;
+            });
+            for(let i = 0;i<masprice.length;i++){
+                masprice[i].style.order = i;
+            }
+        }
+    
+        function price1(){
+            let masprice = [];
+            for (let i=0; i<cards.length;i++){
+                masprice.push(cards[i]);
+            }
+            masprice.sort(function(a,b){
+                return b.dataset.price - a.dataset.price;
+            });
+            for(let i = 0;i<masprice.length;i++){
+                masprice[i].style.order = i;
+            }
+        }
+    
+    
+        function rating(){
+            let masreyting = [];
+            for (let i=0; i<cards.length;i++){
+                masreyting.push(cards[i]);
+            }
+            masreyting.sort(function(a,b){
+                return b.dataset.reyting - a.dataset.reyting;
+            });
+            for(let i = 0;i<masreyting.length;i++){
+                masreyting[i].style.order = i;
+            }
+        }
+    
+        function popularity(){
+            let pop = [];
+            for (let i=0; i<cards.length;i++){
+                pop.push(cards[i]);
+            }
+            pop.sort(function(a,b){
+                return b.dataset.popular - a.dataset.popular;
+            });
+            for(let i = 0;i<pop.length;i++){
+                pop[i].style.order = i;
+            }
+        }
+
+
+        function perestroy(){
+            $(".Vietnam").removeAttr("style");
+            $(".cras_kart").removeAttr("style");
+            $(".niz_right").removeAttr("style");
+            $(".soder_text").removeAttr("style");
+            $(".Vietnam").css({width:"46%",height:"250px",float:"left",marginTop:"1%",justifyContent:"spaceBetween"});
+            $(".cras_kart").css({width:"45%",height:"230px", });
+            $(".niz_right").css({justifyContent:"space-between",flexWrap : "wrap"});
+            $(".soder_text").css({width:"52%",height:"230px",marginTop:"1%" });
+            $(".niz_right").css({paddingLeft:"7%",paddingRight:"7%" });
+            $(".chelovek_ot").css({width:"29%" });
+        }
+        function perestroy2(){
+            $(".Vietnam").css({width:"70%",height:"250px",float:"left",marginTop:"1%",justifyContent:"spaceBetween",marginLeft:"10%"});
+            $(".cras_kart").css({width:"35%",height:"230px", });
+            $(".niz_right").css({justifyContent:"space-between",flexWrap : "wrap"});
+            $(".soder_text").css({width:"60%",height:"230px",marginTop:"1%" });
+            $(".niz_right").css({paddingLeft:"7%",paddingRight:"7%" });
+            $(".chelovek_ot").css({width:"15%" });
+        }
+        function perestroy1() {
+            $(".Vietnam").removeAttr("style");
+            $(".cras_kart").removeAttr("style");
+            $(".niz_right").removeAttr("style");
+            $(".soder_text").removeAttr("style");
+            $(".Vietnam").css({width:"17%",height:"424px",borderRadius: "10px",
+            padding:" 0.5%",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "spaceBetween",})
+            $(".cras_kart").css({width:"100%",height:"194px",borderRadius:"10px"});
+            $(".chelovek_ot").css({width:"29%" });
+            $(".niz_right").css({
+                width: "100%",
+            paddingLeft: "1%",
+            paddingRight: "1%",
+            paddingTop: "1%",
+            paddingBottom: "0.5%",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-around" });
+            $(".soder_text").css({
+                width:"100%",height:"225px",display: "flex",
+            flexwrap: "wrap",
+            justifyContent: "spaceBetween"})
+        }
+    
+        function dark_tema() {
+            document.body.classList.toggle("dark-mode");
+        }
+        
+        function login(){
+            $(".zatek").css({display:"block"})
+            $(".login_box").css({display:"block"})
+        }
+        function close1(){
+            $(".zatek").css({display:"none"})
+            $(".login_box").css({display:"none"})
+        }
+    
+        function vhod() {
+            let email = document.getElementById("em").value
+            let password = document.getElementById("pas").value
+    
+            if (email == "test" && password == "12345") {
+                document.querySelector(".zatek").style.display = "none"
+                document.querySelector(".login_box").style.display = "none"
+                $(".dvon").css({display:"block"})
+                $(".ava").css({display:"block"})
+                $(".avaa").css({display:"none"})
+                $(".logout").css({
+                    display: "flex",
+                    width: "100%",
+                    height: "50px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "10px",
+                    cursor: "pointer"
+                })
+                alert("Успешный вход")
+            } else {
+                alert("Неверный email или пароль")
+            }
+        }
+        function koneck(){
+            $(".dvon").css({display:"none"})
+            $(".ava").css({display:"none"})
+            $(".avaa").css({display:"block"})
+            $(".logout").css({
+                display: "none",
+                width: "100%",
+                height: "50px",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "10px",
+                cursor: "pointer"
+            })
+        }
+    </script>
+</body>
+</html>
